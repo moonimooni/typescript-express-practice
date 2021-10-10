@@ -2,7 +2,7 @@
   "name": "typescript-express-practice",
   "version": "1.0.0",
   "description": "",
-  "main": "api/app.ts",
+  "main": "api/index.ts",
   "scripts": {
     "dev": "nodemon ./api/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
