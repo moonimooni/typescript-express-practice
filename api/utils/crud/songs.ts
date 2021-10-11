@@ -25,17 +25,13 @@ export default class SongsCrud {
     this._data = songs;
   }
 
-  public getSongById(id: number): ISong | Error {
-    const song = this.data.find((song) => {
+  public getSongById(id: number): ISong | undefined {
+    return this.data.find((song) => {
       song.id === id;
     });
-    if (!song) {
-      throw new Error('not found');
-    }
-    return song;
   }
 
-  public getSongs(filter: ISongFilter): Array<ISong> | Error {
+  public getSongs(filter: ISongFilter): Array<ISong | undefined> {
     const { ids } = filter;
     if (ids) {
       this.data = this.data.filter((song) => {
