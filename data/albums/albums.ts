@@ -1,6 +1,6 @@
 import { IAlbum } from './albums.interface';
 
-export namespace Albums {
+export namespace Album {
   export const albums: Array<IAlbum> = [
     {
       id: 1,

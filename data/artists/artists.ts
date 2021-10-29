@@ -1,6 +1,6 @@
 import type { IArtist, IIndivialArtistProfile } from './artist.interface';
 
-export namespace Artists {
+export namespace Artist {
   export const artists: Array<IArtist> = [
     {
       id: 1,

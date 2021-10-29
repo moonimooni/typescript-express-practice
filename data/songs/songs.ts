@@ -1,6 +1,6 @@
 import type { ISong } from './songs.interface';
 
-export namespace Songs {
+export namespace Song {
   export const songs: Array<ISong> = [
     {
       id: 1,
